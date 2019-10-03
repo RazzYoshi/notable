@@ -1,0 +1,12 @@
+.App {
+  text-align: left;
+  display: flex;
+}
+
+#SideBar {
+  flex: 1 0 0;
+}
+
+#Appointments {
+  flex: 1 0 0;
+}
