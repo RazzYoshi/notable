@@ -1,5 +1,48 @@
+@import url("../App.css");
+@import url("../App.css");
+
 .Appointments {
   width: 75vw;
   background: white;
   height: 100vh;
+}
+
+.app-title {
+  font-family: var(--header-font);
+  font-size: 35px;
+  color: gray;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.app-subtitle {
+  font-family: var(--header-font);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 20px;
+}
+
+.appointment {
+  display: flex;
+}
+
+.app-header {
+  font-weight: bold;
+  background: grey;
+}
+
+.app-count {
+  flex: 1 1 0;
+}
+
+.app-name {
+  flex: 1 1 0;
+}
+
+.app-time {
+  flex: 1 1 0;
+}
+
+.app-kind {
+  flex: 1 1 0;
 }

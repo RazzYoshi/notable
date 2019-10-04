@@ -50,16 +50,25 @@ export class Appointments extends Component {
       <div className="Appointments">
         {physician.id ? (
           <div>
-            <div>
+            <div className="app-title">
               Dr. {physician.firstName} {physician.lastName}
             </div>
-            <div>{physician.email}</div>
+            <div className="app-subtitle">{physician.email}</div>
             {appointments.length > 0 && (
               <ul>
+                <div className="appointment app-header" id={0}>
+                  <span className="app-count">#</span>
+                  <span className="app-name">Name</span>
+                  <span className="app-time">Time</span>
+                  <span className="app-kind">Kind</span>
+                </div>
                 {appointments.map((curr, i) => (
-                  <li key={i + 1}>
-                    {curr.patient} {curr.time} {curr.kind}
-                  </li>
+                  <div className="appointment" id={i + 1}>
+                    <span className="app-count">{i}</span>
+                    <span className="app-name">{curr.patient}</span>
+                    <span className="app-time">{curr.time}</span>
+                    <span className="app-kind">{curr.kind}</span>
+                  </div>
                 ))}
               </ul>
             )}

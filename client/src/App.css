@@ -1,3 +1,9 @@
+:root {
+  --header-font: "Impact", "Arial Black", Helvetica, sans-serif;
+  --subheader-font: "Helvetica", Helvetica, sans-serif;
+  --bullet-font: "Georgia", Georgia;
+}
+
 .App {
   text-align: left;
   display: flex;

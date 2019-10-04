@@ -6,8 +6,8 @@ export class SideBar extends Component {
     const { physicians, setPhysician, current } = this.props;
     return (
       <div className="SideBar">
-        <div>NOTABLE</div>
-        <div>PHYSICIANS</div>
+        <div className="title">NOTABLE</div>
+        <div className="subtitle">PHYSICIANS</div>
         {physicians && (
           <ul>
             {physicians.map((physician, i) => (
